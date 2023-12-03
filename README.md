@@ -8,11 +8,18 @@ i/o over streams.
 
 ## Installation
 
-**chex** is available on [ultralisp](https://ultralisp.org/). 
+**chex** is available on [Ultralisp](https://ultralisp.org/). 
 
-Assuming you have added ultralisp to your quicklisp, just run
+Assuming you have added Ultralisp to your quicklisp, just run
 ```lisp
 (ql:quickload :chex)
+```
+You may need to run `(ql:update-dist "ultralisp")` to get the latest version of **chex**.
+
+or if Ultralisp is down you can use quicklisp's local-projects mechanism:
+```bash
+cd ~/quicklisp/local-projects
+git clone https://github.com/oliverdelancey/chex.git
 ```
 
 ## Compatibility
@@ -21,6 +28,9 @@ Assuming you have added ultralisp to your quicklisp, just run
 implementation-independent or trivially easy to add compatibility. Hit up 
 [Issues](https://github.com/oliverdelancey/chex/issues) if there's an 
 implementation that's not working.
+
+**chex** has been tested on Windows 11 and Linux (Fedora Workstation), so it should also
+work on Windows 10 and other Linux distributions.
 
 ## Documentation
 
