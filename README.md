@@ -6,6 +6,15 @@ communicate with it over streams.
 It uses `uiop:launch-program` to asynchronously launch a program and get its
 i/o over streams.
 
+## Installation
+
+**chex** is available on [ultralisp](https://ultralisp.org/). 
+
+Assuming you have added ultralisp to your quicklisp, just run
+```lisp
+(ql:quickload :chex)
+```
+
 ## Compatibility
 
 **chex** has only been tested with SBCL, but *should* be either
